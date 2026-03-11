@@ -90,10 +90,22 @@ youssef@Holberton/Dart$
 
 <details close><summary>
 
-### Task 3. 
+### Task 3. Print Doubles
 
 </summary>
 
+Complete this <a href="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/misc/2022/4/051815b2558a755331852082a54a55c046eecbe1.dart?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20260310%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20260310T182031Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ee0e4faad91236ecae85e81d984f9e87a11cda6b201ee3b4f2a3a8e124d597d6">source code</a> in order to print the doubles stored in the variable number with a precision of 2 digits.
+
+- The output of the program should be:
+- Double: followed by the double with only 2 digits
+- followed by a new line
+
+```
+youssef@Holberton/Dart$ dart 3-print_double.dart
+Double: 3.14
+
+youssef@Holberton/Dart$
+```
 
 </details>
 
