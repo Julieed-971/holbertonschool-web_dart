@@ -111,29 +111,99 @@ youssef@Holberton/Dart$
 
 <details close><summary>
 
-### Task 4. 
+### Task 4. Print string
 
 </summary>
 
+Complete this <a href="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/misc/2022/4/eee3f8d0682099ca65dd48eacfb636114eb2bdcf.dart?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20260311%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20260311T072359Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5415b2bb8d6bab90427d79c542a78d7a83380da1ef81d4e773c72de06c936fed">source code</a> in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+
+- The output of the program should be:
+- 3 times the value of str
+- followed by a new line and the 9 first characters of str
+- followed by a new line
+- You are not allowed to use any loops or conditional statement
+- Your program should be maximum 5 lines long
+
+```
+youssef@Holberton/Dart$ dart 4-print_string.dart > output 
+youssef@Holberton/Dart$ cat -e output
+Holberton SchoolHolberton SchoolHolberton School$
+Holberton$
+$
+youssef@Holberton/Dart$
+```
+
+</details>
+
+<details close><summary>
+
+### Task 5. Assertion
+
+</summary>
+
+Write a Dart program that validates a test score passed as a command-line argument
+
+Complete this <a href="https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/misc/2022/4/ce138aade1ae35689b202d8ddba3280e0b476bf5.dart?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20260311%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20260311T072512Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=35ad5b65aecc4045ad4d37dd74a33f6b1cfd3ad56316ad503ac5007138eb2918">source code</a> to create a program that:
+
+- Takes a number as a command-line argument when running the program (as shown below in the output example)
+- Checks if the number is greater than or equal to 80
+- If the score is >= 80, prints You Passed
+- Otherwise, throw an assertion error with the message The score must be bigger or equal to 80
+
+```
+youssef@Holberton/Dart$ dart --enable-asserts 5-assertion.dart 79
+Unhandled exception:
+'file:/youssef@Holberton/Dart/5-assertion.dart': Failed assertion: line 3 pos 10: 'nb >= 80': The score must be bigger or equal to 80
+#0      _AssertionError._doThrowNew (dart:core-patch/errors_patch.dart:51:61)
+#1      _AssertionError._throwNew (dart:core-patch/errors_patch.dart:40:5)
+#2      main (file:/youssef@Holberton/Dart/5-assertion.dart:3:10)
+#3      _delayEntrypointInvocation.<anonymous closure> (dart:isolate-patch/isolate_patch.dart:295:32)
+#4      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:192:12)
+
+youssef@Holberton/Dart$ dart --enable-asserts 5-assertion.dart 80
+You Passed
+youssef@Holberton/Dart$ 
+```
+
+Requirement:
+
+- You MUST use assertions (no IF/ELSE statements allowed)
 
 
 </details>
 
 <details close><summary>
 
-### Task 5. 
+### Task 6. Positive anything is better than negative nothing
 
 </summary>
 
+Write a dart Program That given an argument ,determine if its positive or negative
 
-</details>
+- The variable number will store as a string you should converted to integer
 
-<details close><summary>
+- The output of the program should be:
 
-### Task 6. 
+- The number, followed by
+    - if the number is greater than 0: is positive
+    - if the number is 0: is zero
+    - if the number is less than 0:is negative
 
-</summary>
-
+```
+youssef@Holberton/Dart$ dart 6-positive_or_negative.dart -4
+-4 is negative
+youssef@Holberton/Dart$ dart 6-positive_or_negative.dart 0
+0 is zero
+youssef@Holberton/Dart$ dart 6-positive_or_negative.dart -3
+-3 is negative
+youssef@Holberton/Dart$ dart 6-positive_or_negative.dart 10
+10 is positive
+youssef@Holberton/Dart$ dart 6-positive_or_negative.dart 6
+6 is positive
+youssef@Holberton/Dart$ dart 6-positive_or_negative.dart -10
+-10 is negative
+youssef@Holberton/Dart$
+```
 
 </details>
 
