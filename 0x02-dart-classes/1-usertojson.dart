@@ -3,18 +3,14 @@ class User {
   int age = 0;
   double height = 0;
 
-  User(name, age, height) {
-    this.name = name;
-    this.age = age;
-    this.height = height;
+  User({required this.name, required this.age, required  this.height}) {
   }
 
   Map<String, dynamic> toJson() {
-    Map<String, dynamic> userMap = {
-      'name': this.name,
-      'age': this.age,
-      'height': this.height,
+    return {
+      'name': name,
+      'age': age,
+      'height': height,
     };
-    return userMap;
   }
 }
