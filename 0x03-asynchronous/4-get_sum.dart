@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import '4-util.dart';
 
-Future<double> calculateTotal() async {
+Future<dynamic> calculateTotal() async {
   try {
     String userData = await fetchUserData();
     Map<String, dynamic> userObject = jsonDecode(userData);
